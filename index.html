@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест</title>
+	<script type='text/javascript' src='js/jquery.js'></script>
+    <script type='text/javascript' src='js/custom.js'></script>
+    <link rel='stylesheet' id='custom-css'  href='css/custom.css?ver=1' type='text/css' media='all' />
+    <script src="http://api-maps.yandex.ru/2.1/?apikey=f4bbebb5-e695-4b46-ba04-7886e8bb650c&lang=ru_RU" type="text/javascript"></script>
+ 
+    <style>
+        body, html {
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+
+</head>
+ 
+<body>
+
+<div class="page-content">
+    <div class="form-box">
+        <form class="map-form" action="">
+           <div class="f-input-container">
+               <div class="f-input-title">City</div>
+               <div class="f-input-box">
+                   <input class="f-input" type="text" name="city">
+                   <div class="error-mark">!</div>
+               </div>
+               <div class="notice-box"></div>
+           </div>
+            <div class="f-input-container">
+                <div class="f-input-title">Streen</div>
+                <div class="f-input-box">
+                    <input class="f-input" type="text" name="street">
+                    <div class="error-mark">!</div>
+                </div>
+                <div class="notice-box"></div>
+            </div>
+            <div class="f-input-container">
+                <div class="f-input-title">House</div>
+                <div class="f-input-box">
+                    <input class="f-input" type="text" name="house">
+                    <div class="error-mark">!</div>
+                </div>
+                <div class="notice-box"></div>
+            </div>
+            <div class="f-button-box">
+                <button class="btn submit-btn" type="submit">Find district</button>
+            </div>
+        </form>
+    </div>
+    <div id="map" class="map-box" style="width: 100%; height: 90%"></div>
+
+</div>
+
+</body>
+</html>

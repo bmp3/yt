@@ -1,0 +1,30 @@
+.page-content { display : flex; max-width : 1400px; margin : 0 auto; }
+.form-box { flex : 0 0 50%; background-color : #f2f5f3; }
+.map-form { max-width : 480px; margin : 40px auto; }
+.f-input-container { position : relative; min-height : 89px; font-size : 18px; margin : 0 0 0 0; transition : all 0.5s; }
+.f-input-container .f-input-title { line-height : 1.5; font-size : 14px; color : #99a1a4; }
+.f-input-container .f-input-box { position : relative; }
+.f-input-container .f-input-box .f-input { width : 100%; max-width: calc(100% - 13px); height : 36px; padding : 0 0 0 10px; font-size : 18px; line-height : 1; color : #000; background-color : #fff; border : 2px solid transparent; border-radius : 5px; transition : all 0.3s; }
+.f-input-container.has-error .f-input-box .f-input { border-color: #da6597; }
+.f-input-container .f-input-box .error-mark { position : absolute; height : 22px; width : 22px; background-color : #da6597; color : #fff; border-radius : 50%; top : 50%; right : 10px; transform : translateY(-50%); display : flex; justify-content : center; align-items : center; opacity : 0; transition : all 0.3s; }
+.f-input-container.has-error .f-input-box .error-mark { opacity : 1; }
+.f-input-container .notice-box { text-align : right; line-height : 2; font-size : 14px; color : #da6597; opacity : 0; transition : all 0.3s; }
+.f-input-container.has-error .notice-box { opacity : 1; }
+.f-button-box { text-align : right; }
+.f-button-box .btn { display : inline-block; padding : 10px 20px; background-color : #7a9820; border : 0px solid transparent; font-size: 16px; color : #fff; text-align : center; border-radius : 7px; cursor : pointer; }
+
+
+.map-box { flex : 0 0 50%; min-height : 100%; background-color : #ddd; }
+.map-box.active { background-color : transparent; }
+
+
+@media screen and ( max-width : 968px ) {
+    .page-content { display : block; }
+    .map-form { padding : 40px 0; margin : 0 auto; }
+}
+
+@media screen and ( max-width : 481px ) {
+    .map-form { max-width : 300px; }
+}
+
+
